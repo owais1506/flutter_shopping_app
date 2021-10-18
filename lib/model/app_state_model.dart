@@ -71,6 +71,7 @@ class AppStateModel extends foundation.ChangeNotifier {
         _productsInCart.values.fold(0.0, (accumulator, itemCount) {
           return accumulator + itemCount;
         });
+
   }
 
   // Sales tax for the items in the cart
