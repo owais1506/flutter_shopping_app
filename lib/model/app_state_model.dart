@@ -78,9 +78,9 @@ class AppStateModel extends foundation.ChangeNotifier {
   double get tax {
     return subtotalCost * _salesTaxRate;
   }
-
   // Total cost to order everything in the cart.
   double get totalCost {
+    
     return subtotalCost + shippingCost + tax;
   }
 
